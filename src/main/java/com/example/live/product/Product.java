@@ -25,6 +25,9 @@ public class Product {
     @Column(name = "stock")
     private Long stock;
 
+    @Column(name = "price")
+    private Long price;
+
     //getters and setters
 
     public Long getId() {
@@ -50,4 +53,8 @@ public class Product {
     public Long getStock() { return stock; }
 
     public void setStock(Long stock) { this.stock = stock; }
+
+    public Long getPrice() { return price; }
+
+    public void setPrice(Long price) { this.price = price; }
 }
