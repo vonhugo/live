@@ -1,5 +1,6 @@
 package com.example.live.product;
 
+import com.example.live.category.Category;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,6 +10,19 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id", nullable = false)
+    private Category category;
+
+    // Constructor vacío
+    public Product() {}
+
+    // Constructor con parámetros
+    public Product(String nombre, Category category) {
+        this.name = name;
+        this.category = category;
+    }
 
     @Column(name = "eancode")
     private String eancode;
@@ -68,4 +82,8 @@ public class Product {
     public Long getPrice() { return price; }
 
     public void setPrice(Long price) { this.price = price; }
+
+    public Category getCategory() { return category; }
+
+    public void setCategory(Category category) { this.category = category; }
 }
