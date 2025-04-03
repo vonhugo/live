@@ -2,6 +2,7 @@ package com.example.live.store;
 
 import java.util.List;
 
+import com.example.live.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +25,11 @@ public class StoreController {
 
     @Autowired
     private StoreRepository storeRepository;
+
+    @GetMapping
+    public List<Store> getAllStores() {
+        return storeRepository.findAll();
+    }
 
 
 }
