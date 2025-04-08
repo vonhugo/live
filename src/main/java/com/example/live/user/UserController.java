@@ -46,6 +46,8 @@ public class UserController {
     User existingUser = userRepository.findById(id).get();
 
     logger.info("Updating user with ID: {}", id);
+    logger.info("New name: {}", user.getName());
+    logger.info("New email: {}", user.getEmail());
     logger.info("New username: {}", user.getUsername());
     logger.info("New role: {}", user.getRole());
 
