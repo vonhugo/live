@@ -8,7 +8,6 @@ import java.util.List;
 @Table(name = "category")
 public class Category {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -28,9 +27,7 @@ public class Category {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
     public String getCategoryName() { return categoryName; }
 
@@ -38,7 +35,9 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public String setCategoryDescription() { return categoryDescription; }
+    public String getCategoryDescription() { return categoryDescription; }
+
+    public String setCategoryDescription(String categoryDescription) { this.categoryDescription = categoryDescription; }
 
     public Long getCategoryType() { return categoryType; }
 
