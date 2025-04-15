@@ -37,7 +37,7 @@ public class Category {
 
     public String getCategoryDescription() { return categoryDescription; }
 
-    public String setCategoryDescription(String categoryDescription) { this.categoryDescription = categoryDescription; }
+    public void setCategoryDescription(String categoryDescription) { this.categoryDescription = categoryDescription; }
 
     public Long getCategoryType() { return categoryType; }
 

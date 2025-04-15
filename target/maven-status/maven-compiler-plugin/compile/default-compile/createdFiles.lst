@@ -1,16 +1,1 @@
-com/example/live/category/Category.class
-com/example/live/product/Product.class
-com/example/live/store/StoreController.class
-com/example/live/location/LocationController.class
-com/example/live/store/Store.class
-com/example/live/user/User.class
-com/example/live/store/StoreRepository.class
 com/example/live/LiveApplication.class
-com/example/live/product/ProductController.class
-com/example/live/product/ProductRepository.class
-com/example/live/user/UserRepository.class
-com/example/live/location/Location.class
-com/example/live/category/CategoryRepository.class
-com/example/live/category/CategoryController.class
-com/example/live/location/LocationRepository.class
-com/example/live/user/UserController.class
