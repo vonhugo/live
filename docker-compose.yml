@@ -1,7 +1,7 @@
 services:
   java_app:
     container_name: java_app
-    image: vonhugo/backend_live:0.0.7
+    image: vonhugo/backend_live:0.0.8
     build: . # dureccion donde esta el docketfile
     mem_limit: 512m
     ports:
